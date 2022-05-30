@@ -14,7 +14,7 @@ const Pagination = () => {
         <option data-cy="pagination-limit-6">6</option>
         <option data-cy="pagination-limit-9">9</option>
       </Select>
-      <Button data-cy="pagination-next-button" >Next</Button>
+      <Button data-cy="pagination-next-button">Next</Button>
       <Button data-cy="pagination-last-button">Last</Button>
     </ButtonGroup>
   );
