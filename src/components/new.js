@@ -60,5 +60,3 @@ const Products = () => {
 };
 
 export default Products;
-
-// templateColumns="repeat(5, 1fr)" gap={6}
