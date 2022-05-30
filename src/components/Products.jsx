@@ -4,8 +4,9 @@ import { Flex,Grid, GridItem, } from "@chakra-ui/react";
 import Product from "./Product";
 import Pagination from "./Pagination";
 
-const Products = ({pageNumber}) => {
-  console.log(pageNumber)
+const Products = () => {
+  
+  
   const[data,setData]=useState([]);
   
 
@@ -13,14 +14,14 @@ const Products = ({pageNumber}) => {
  // const Flex = () => <div />;
   //const Grid = () => <div />;
 useEffect(()=>{
-  const getData = axios.get(`http://localhost:8080/products?_page=${pageNumber}&_limit=${3}`)
+  const getData = axios.get(`http://localhost:8080/products?_page=${1}&_limit=${3}`)
   .then(function (response) {
     // handle success
     console.log(response);
     const data=response.data
     setData(data)
   })
-},[pageNumber])
+},[])
 
 
 
