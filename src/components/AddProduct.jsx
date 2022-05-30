@@ -6,7 +6,10 @@ const AddProduct = () => {
  
   return (
     <>
-      <Button my={4} data-cy="add-product-button"   colorScheme='teal' size='xl'></Button>
+      <Button my={4} data-cy="add-product-button"   colorScheme='teal' size='xl'>
+
+        Add Product
+        </Button>
       <Modal>
         <ModalBody pb={6}>
           <Input data-cy="add-product-title" />
@@ -24,6 +27,7 @@ const AddProduct = () => {
           <Button data-cy="add-product-submit-button"></Button>
         </ModalBody>
       </Modal>
+      
       
     </>
   );
