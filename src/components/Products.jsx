@@ -30,18 +30,11 @@ useEffect(()=>{
 <>
     <Pagination />
     <Flex>
-      
-    
-  
       <Grid templateColumns='repeat(3, 1fr)' gap={6}>
-      
       {data.map((product)=>(
-        
-            <Product  key={product.id} product={product}/>
-            
+        <Product  key={product.id} product={product}/>
       ))}
-    
-      </Grid>
+    </Grid>
       
       {/* Pagination */}
     </Flex>
